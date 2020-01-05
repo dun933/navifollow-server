@@ -1,3 +1,5 @@
+## 借助大神的代码完成的一个项目的服务器端，保存一下，还不太会用。
+
 ## 本项目基于[yolo3](https://github.com/pjreddie/darknet.git) 与[crnn](https://github.com/meijieru/crnn.pytorch.git)  实现中文自然场景文字检测及识别
 
 # 实现功能
