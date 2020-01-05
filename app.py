@@ -38,7 +38,7 @@ class OCR:
         data = web.data()
         data = json.loads(data)
         billModel = data.get('billModel','')
-        textAngle = data.get('textAngle',False)##文字检测
+        textAngle = data.get('textAngle',True)##文字检测
         textLine = data.get('textLine',False)##只进行单行识别
         
         imgString = data['imgString'].encode().split(b';base64,')[-1]

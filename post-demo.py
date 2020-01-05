@@ -20,8 +20,8 @@ def post(p,billModel='通用OCR'):
                   'imgString':imgString,}
     param = json.dumps(param)
     if 1:
-            req          =  requests.post(URL,data= param,headers=None,timeout=5)
-            data         =  req.content.decode('utf-8')
+            req=requests.post(URL,data= param,headers=None,timeout=100)
+            data=req.content.decode('utf-8')
             data         =  json.loads(data)
     else:
             data =[]
@@ -29,5 +29,5 @@ def post(p,billModel='通用OCR'):
 
     
 if __name__=='__main__':
-    p = 'test/card.png'
-    post(p,'身份证')
+    p = 'test/60.jpg'
+    post(p,'通用OCR')
